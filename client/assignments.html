@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignments</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+ <div class="sidebar">
+  <h2 class="logo">Performance Monitoring App</h2>
+
+  <nav class="menu">
+    <a href="dashboard.html" class="sidebar-item">
+      <span class="icon">🏠</span>
+      <span>Home</span>
+    </a>
+
+    <a href="attendance.html" class="sidebar-item">
+      <span class="icon">📅</span>
+      <span>Attendance</span>
+    </a>
+
+    <a href="marks.html" class="sidebar-item">
+      <span class="icon">📊</span>
+      <span>Marks</span>
+    </a>
+
+    <a href="assignments.html" class="sidebar-item">
+      <span class="icon">📝</span>
+      <span>Assignments</span>
+    </a>
+
+    <a href="logout.html" class="sidebar-item logout">
+      <span class="icon">🚪</span>
+      <span>Logout</span>
+    </a>
+  </nav>
+</div>
+
+
+  <!-- MAIN -->
+  <div class="main">
+    <div class="header">
+      <h3>Assignment Status</h3>
+      <div id="studentName">Student</div>
+      
+    </div>
+
+    <div class="content">
+<div class="content">
+  <!-- TOP BLUE CARD -->
+  <div class="assignment-top">
+    <div class="top-header">
+      <h3>My Assignments</h3>
+      <span class="date">02/01/2023</span>
+    </div>
+
+    <div class="progress-info">
+      <span class="badge">2/5</span>
+      <input type="range" min="0" max="5" value="2" disabled>
+      <p>Assignment Progress</p>
+    </div>
+</div>
+
+  <!-- ASSIGNMENT LIST -->
+  <div class="assignment-list">
+
+    <div class="assignment-item">
+      <div class="left">
+        <span class="dot"></span>
+        <div>
+          <h4>Human Computer Interaction</h4>
+          <p>Submit before 07/01/2023</p>
+        </div>
+      </div>
+      <button class="submit-btn">Submit</button>
+    </div>
+
+    <div class="assignment-item">
+      <div class="left">
+        <span class="dot"></span>
+        <div>
+          <h4>Computer Intelligence</h4>
+          <p>Submit before 05/01/2023</p>
+        </div>
+      </div>
+      <button class="submit-btn">Submit</button>
+    </div>
+
+    <div class="assignment-item">
+      <div class="left">
+        <span class="dot"></span>
+        <div>
+          <h4>Java Programming</h4>
+          <p>Submit before 09/01/2023</p>
+        </div>
+      </div>
+      <button class="submitted-btn">Submitted</button>
+    </div>
+
+    <div class="assignment-item">
+      <div class="left">
+        <span class="dot"></span>
+        <div>
+          <h4>Computer Networking</h4>
+          <p>Submit before 11/01/2023</p>
+        </div>
+      </div>
+      <button class="submitted-btn">Submitted</button>
+    </div>
+
+    <div class="assignment-item">
+      <div class="left">
+        <span class="dot"></span>
+        <div>
+          <h4>Data Science Theory</h4>
+          <p>Submit before 04/01/2023</p>
+        </div>
+      </div>
+      <button class="submit-btn">Submit</button>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+
+<script src="assignments.js"></script>
+</body>
+</html>

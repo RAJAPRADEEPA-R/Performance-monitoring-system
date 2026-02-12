@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <!-- Dashboard-specific CSS -->
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="dashboard-layout"> <!-- Scoped wrapper for dashboard -->
+
+  <!-- Sidebar -->
+  <div class="dashboard-sidebar">
+    <h2>Performance Monitoring App</h2>
+    <div class="dashboard-menu">
+      <a href="dashboard.html" class="dashboard-item active">
+        <span class="icon">🏠</span> <span>Home</span>
+      </a>
+      <a href="attendance.html" class="dashboard-item">
+        <span class="icon">📅</span> <span>Attendance</span>
+      </a>
+      <a href="marks.html" class="dashboard-item">
+        <span class="icon">📊</span> <span>Marks</span>
+      </a>
+      <a href="assignments.html" class="dashboard-item">
+        <span class="icon">📝</span> <span>Assignments</span>
+      </a>
+      <a href="logout.html" class="dashboard-item logout">
+        <span class="icon">🚪</span> <span>Logout</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="dashboard-main">
+    <div class="dashboard-header">
+      <h3>Home</h3>
+      <div id="studentName">Student</div>
+    </div>
+
+    <div class="dashboard-content">
+      <div class="blue-card">
+        <h2>Welcome Back 👋</h2>
+        <p>Monitor attendance, marks and assignments here</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

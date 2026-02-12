@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attendance</title>
+  
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+  <h2 class="logo">Performance Monitoring App</h2>
+
+  <nav class="menu">
+    <a href="dashboard.html" class="sidebar-item">
+      <span class="icon">🏠</span>
+      <span>Home</span>
+    </a>
+
+    <a href="attendance.html" class="sidebar-item">
+      <span class="icon">📅</span>
+      <span>Attendance</span>
+    </a>
+
+    <a href="marks.html" class="sidebar-item">
+      <span class="icon">📊</span>
+      <span>Marks</span>
+    </a>
+
+    <a href="assignments.html" class="sidebar-item">
+      <span class="icon">📝</span>
+      <span>Assignments</span>
+    </a>
+
+    <a href="logout.html" class="sidebar-item logout">
+      <span class="icon">🚪</span>
+      <span>Logout</span>
+    </a>
+  </nav>
+</div>
+
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- HEADER -->
+    <div class="header">
+      <h3>Attendance</h3>
+      <div id="studentName">Student</div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+      <div class="blue-card">
+  <h2>My Attendance</h2>
+  <p>Track your presence and maintain your academic standing</p>
+</div>
+      <!-- SUMMARY CARDS -->
+      <div class="summary-cards">
+
+        <div class="summary-card">
+          <h4>Overall Attendance</h4>
+          <p class="percent green">82%</p>
+        </div>
+
+        <div class="summary-card">
+          <h4>Total Classes</h4>
+          <p class="big">120</p>
+        </div>
+
+        <div class="summary-card">
+          <h4>Present</h4>
+          <p class="big green">98</p>
+        </div>
+
+        <div class="summary-card">
+          <h4>Absent</h4>
+          <p class="big red">22</p>
+        </div>
+
+        <div class="summary-card">
+          <h4>Total Working Days</h4>
+          <p class="big">30</p>
+        </div>
+
+        <div class="summary-card">
+          <h4>Approved Leaves</h4>
+          <p class="big blue">4</p>
+        </div>
+
+      </div>
+
+      <!-- INFO BOX -->
+      <div class="info-box">
+        <b>Welcome to Your Attendance Dashboard!</b><br>
+        Your attendance records will automatically appear here once faculty starts marking attendance.
+      </div>
+
+      <!-- SUBJECT WISE -->
+      <div class="card">
+        <h3>Subject-wise Attendance</h3>
+
+        <div class="subject">
+          Control Systems <span class="warn">72%</span>
+        </div>
+
+        <div class="subject">
+          Electrical Machines <span class="good">85%</span>
+        </div>
+
+        <div class="subject">
+          Power Systems <span class="good">80%</span>
+        </div>
+
+        <div class="subject">
+          Circuits <span class="good">90%</span>
+        </div>
+      </div>
+
+      <!-- WARNING -->
+      <div id="warningBox" class="warning hidden">
+        ⚠ Attendance below 75% in <b>Control Systems</b>
+      </div>
+
+      <!-- LEAVE DETAILS -->
+      <div class="card leave-card">
+        <h3>My Leave Records</h3>
+
+        <table class="leave-table">
+          <tr>
+            <th>Date</th>
+            <th>Reason</th>
+            <th>Status</th>
+          </tr>
+
+          <tr>
+            <td>05 Feb 2026</td>
+            <td>Medical Leave</td>
+            <td class="approved">Approved</td>
+          </tr>
+
+          <tr>
+            <td>20 Jan 2026</td>
+            <td>Family Function</td>
+            <td class="approved">Approved</td>
+          </tr>
+
+          <tr>
+            <td>10 Jan 2026</td>
+            <td>Personal Work</td>
+            <td class="pending">Pending</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="attendance.js"></script>
+</body>
+</html>

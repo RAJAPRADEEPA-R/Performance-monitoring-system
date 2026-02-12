@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marks</title>
+  <link rel="stylesheet" href="marks.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h2 class="logo">Performance Monitoring App</h2>
+
+    <nav class="menu">
+      <a href="dashboard.html" class="sidebar-item">
+        <span class="icon">🏠</span>
+        <span>Home</span>
+      </a>
+
+      <a href="attendance.html" class="sidebar-item">
+        <span class="icon">📅</span>
+        <span>Attendance</span>
+      </a>
+
+      <a href="marks.html" class="sidebar-item active">
+        <span class="icon">📊</span>
+        <span>Marks</span>
+      </a>
+
+      <a href="assignments.html" class="sidebar-item">
+        <span class="icon">📝</span>
+        <span>Assignments</span>
+      </a>
+
+      <a href="logout.html" class="sidebar-item logout">
+        <span class="icon">🚪</span>
+        <span>Logout</span>
+      </a>
+    </nav>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+     <div class="header">
+      <h3>Marks</h3>
+      <div id="studentName">Student</div>
+    </div>
+
+
+    <!-- PURPLE TOP BANNER -->
+    <div class="marks-banner">
+      <div>
+        <h2>Raja Pradeepa R</h2>
+        <p>Electrical & Electronics Engineering</p>
+      </div>
+
+      <div class="banner-stats">
+        <div>
+          <h3>8</h3>
+          <p>Subjects</p>
+        </div>
+        <div>
+          <h3>7.6</h3>
+          <p>SGPA</p>
+        </div>
+        <div>
+          <h3>7.4</h3>
+          <p>CGPA</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUBJECT LIST CARD -->
+    <div class="marks-container">
+
+      <div class="marks-row">
+        <div>
+          <h4>Mathematics</h4>
+          <p>Internal: 78 | Semester Grade: A</p>
+        </div>
+        <span class="status pass">Pass</span>
+      </div>
+
+      <div class="marks-row">
+        <div>
+          <h4>Circuits</h4>
+          <p>Internal: 82 | Semester Grade: A+</p>
+        </div>
+        <span class="status pass">Pass</span>
+      </div>
+
+      <div class="marks-row">
+        <div>
+          <h4>Electrical Machines</h4>
+          <p>Internal: 65 | Semester Grade: B</p>
+        </div>
+        <span class="status pass">Pass</span>
+      </div>
+
+      <div class="marks-row">
+        <div>
+          <h4>Control Systems</h4>
+          <p>Internal: 42 | Semester Grade: F</p>
+        </div>
+        <span class="status fail">Fail</span>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<script src="marks.js"></script>
+</body>
+</html>

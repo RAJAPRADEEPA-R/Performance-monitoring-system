@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Performance Monitoring App</title>
+<link rel="stylesheet" href="login.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+    }
+
+    .login-box {
+      width: 350px;
+      background: white;
+      padding: 40px;
+      margin: 100px auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .app-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .options a {
+      text-decoration: none;
+      color: #1976d2;
+      cursor: pointer;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #1976d2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .error {
+      color: red;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- LOGIN PAGE -->
+<div class="login-box" id="loginPage">
+  <div class="app-title">Performance Monitoring App</div>
+  <br>
+  <div class="subtitle">Student Login</div>
+
+  <div class="error" id="loginError"></div>
+
+  <input type="text" id="username" placeholder="Student Name">
+  <input type="password" id="loginPassword" placeholder="Password">
+
+  <div class="options">
+    <label class="save-pass">
+  <input type="checkbox"><span>Save Password</span>
+</label>
+
+    <a onclick="showForgot()">Forgot password?</a>
+  </div>
+
+  <button onclick="login()">Login</button>
+</div>
+
+<!-- FORGOT PASSWORD -->
+<div class="login-box hidden" id="forgotBox">
+  <div class="app-title">Reset Password</div>
+
+  <input type="password" id="newPass" placeholder="New Password">
+  <input type="password" id="confirmPass" placeholder="Confirm Password">
+
+  <button onclick="resetPassword()">Save Password</button>
+  <p style="cursor:pointer;color:#1976d2" onclick="showLogin()">Back to Login</p>
+</div>
+
+
+</script>
+<script src="login.js"></script>
+</body>
+</html>
